@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 $(function(){
     
 
@@ -269,3 +270,5 @@ $hs_images.each(function(){
 	}).attr('src',$this.attr('src'));
 });			
 >>>>>>> iniciei o modal
+=======
+>>>>>>> colocado cursor pointer no card-body (parte do texto do card); limpei arquivo js
