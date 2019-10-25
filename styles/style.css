@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 @font-face { 
     font-family: 'AmericanCaptain';
     src: url('./../assest/AmericanCaptain.otf');
@@ -10,14 +9,8 @@
     box-sizing: border-box;
     
 }
-=======
-
->>>>>>> finalizado
 
 
-
-
-<<<<<<< HEAD
 body{
 background-color: #000000;
 
@@ -96,13 +89,11 @@ hr{
 header {
     position: relative;
     background-color: black;
-    height: 90vh;
-    min-height: 25rem;
+    margin-bottom: 20px;
     width: 100%;
     overflow: hidden;
 
 }
-=======
 
 
 
@@ -115,20 +106,6 @@ header {
 
 
 
-
-
-
-
-
-
-
->>>>>>> finalizado
-
-
-
-
-
-<<<<<<< HEAD
 @media(min-width:1024px){
 
     .menu-responsivo{
@@ -136,14 +113,6 @@ header {
         width: auto;
     }
 }
-=======
-
->>>>>>> finalizado
-
-
-
-
-<<<<<<< HEAD
 
 @media (max-width: 991px){
 
@@ -183,7 +152,7 @@ header {
 }
 
 
-@media (max-width: 425px){
+@media (max-width: 992px){
 
 
     .menu-responsivo{
@@ -292,8 +261,6 @@ header {
 
 
 
-=======
-=======
 
 
 
@@ -513,13 +480,6 @@ header {
 
 
 
-
-
-
-
-
-
->>>>>>> finalizado
 *{
     box-sizing: border-box;
 }
@@ -659,9 +619,3 @@ body {
         height: 34px;
     }
 }
-<<<<<<< HEAD
->>>>>>> feito a section contatos e footer. adiconado icones e feito a parte responsiva mobile.
-=======
-
-
->>>>>>> Alterado tamanhos de textos,icones e feito o media querry.
