@@ -13,7 +13,7 @@ body {
 }
 
 .producao-img {
-    width: 130%;
+    width: 100%;
     max-width: 950px;
     /* width: 2200px; */
 }
@@ -118,7 +118,6 @@ color: white;
     .texto-somos {
         margin-top: 10px;
         font-size: 19px;
-        margin-right: -86px;
         
     }
     .foto-larissa {
