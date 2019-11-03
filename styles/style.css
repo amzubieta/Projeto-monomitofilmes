@@ -1,9 +1,9 @@
 
-@font-face { 
+/* @font-face { 
     font-family: 'AmericanCaptain';
     src: url('./../assest/AmericanCaptain.otf');
-    /* src: local('American Captain'), local('American Captain'), url('./assest/AmericanCapitain.tff') format('truetype'); */
- }
+    /* src: local('American Captain'), local('American Captain'), url('./assest/AmericanCapitain.tff') format('truetype'); 
+ } 
 
 *{
     box-sizing: border-box;
@@ -27,7 +27,7 @@ background-color: #000000;
 img{
     width: 100%;
     /* opacity: 0.5;
-    filter: alpha(opacity=10); */
+    filter: alpha(opacity=10); 
 }
 
 nav{
@@ -400,14 +400,8 @@ body {
         height: 34px;
     }
 }
-/* <<<<<<< HEAD
->>>>>>> feito a section contatos e footer. adiconado icones e feito a parte responsiva mobile.
-=======
 
-
->>>>>>> Alterado tamanhos de textos,icones e feito o media querry.
-======= */
-.bg-verde{
+/* .bg-verde{
     background-color: #d2fd34;
 }
 
@@ -426,5 +420,5 @@ body {
     bottom: 0;
     transform: scale(1);
     transition: 0.5s all;
-}
-/* >>>>>>> feito cards da section portfólio com bootstrap e efeito na descrição */
+} */
+

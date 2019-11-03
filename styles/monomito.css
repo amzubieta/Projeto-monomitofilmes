@@ -1,42 +1,110 @@
-* {
+/* //GERAL// */
+
+*{
     box-sizing: border-box;
 }
-html 
 
-body {
+body{
+    background-color: #000000;
     max-width: 100%;
     max-height: 100%;
-    font-family: 'Rubik', sans-serif;
-    background-color: gray ;
-    background-image: url(../img/h2-pattern.png);
+}
+
+/* //NAV BAR// */
+
+@font-face { 
+    font-family: 'AmericanCaptain';
+    src: url('./../assest/AmericanCaptain.otf');
+ }
+
+.fixo{
+    height: 90px;
+    background-image: linear-gradient(to bottom, black , rgba(0, 0, 0, 0.062));
+}
+
+img{
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+nav img{
+    width:150px;
+    z-index: 1;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.nav-item{
+    margin: 0 5px;
+}
+
+.menu-responsivo{
+    width: 100vw;
+}
+
+.navegacao{
+    font-family: 'AmericanCaptain';
+    font-size: 24px;
+}
+
+hr{
+    background-color:#d2fd34;
+    width:45px;
+    height: 5px;
+    margin-top: 0;
+}
+
+.traco{
+    opacity: 0;
+    transform: scale(1,3);
+    transition: 0.5s all;
+}
+
+.nav-item:hover .traco{
+    opacity: 1;
+    transform: scale(1);
+    transition:0,5s all;
+}
+
+.menu{
+    background-color:white;
+    z-index: 1;
+}
+
+/* //HEADER// */
+
+header {
+    position: relative;
+    background-color: black;
+    height: 90vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
 
 }
+
+/* //QUEM SOMOS// */
 
 .producao-img {
     width: 130%;
     max-width: 950px;
-    /* width: 2200px; */
 }
+
 .logo-monomito {
     width: 100px;
-    /* margin-block-start: -709px; */
     background-color: black;
 }
+
 .logo-monomito-2 {
     width: 100px;
-    /* margin-block-start: -709px;
-    margin-left: 1200px; */
     background-color: black;
 }
-
-
-
-/* #monomito-personal {
-    background-image: url(/img/h2-pattern.png), url(/img/logo\ baixa.jpg);
-    background-position: right bottom, left top;
-    background-repeat: no-repeat, repeat;
-    padding: 15px;
-} */
 
 .texto-somos {
     font-size: 10px;
@@ -48,32 +116,38 @@ body {
     font-size: 15px;
     color: white;
 }
+
 .texto-monomito {
-margin-left: 10px;
-font-size: 12px;
-color: white;
+    margin-left: 10px;
+    font-size: 12px;
+    color: white;
 }
+
 .texto-monomito-2 {
     margin-left: 10px;
     font-size: 12px;
     color: white; 
 }
+
 #monomito-pessoal {
     display: flex;
 }
+
 .larissa {
     display: flex;
     flex-direction: initial;
     align-items: center;
 }
+
 .foto-larissa {
     width: 40px;
     height: 40px;
     border-radius: 30px;
 }
+
 .texto-larissa {
-margin-left: 10px;
-color: white;
+    margin-left: 10px;
+    color: white;
 }
 
 .lincoln {
@@ -81,11 +155,13 @@ color: white;
     flex-direction: initial;
     align-items: center;
 }
+
 .foto-lincoln {
     width: 40px;
     height: 40px;
     border-radius: 30px;
 }
+
 .texto-lincoln {
     margin-left: 10px;
     color: white;
@@ -96,49 +172,407 @@ color: white;
     flex-direction: initial;
     align-items: center;
 }
+
 .foto-paulo {
     width: 40px;
     height: 40px;
     border-radius: 30px;
 }
+
 .texto-paulo {
-margin-left: 10px;
-color: white;
+    margin-left: 10px;
+    color: white;
 }
 
-/* //media queries// */
+/* //PORTFOLIO// */
+
+#portfolio {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.bg-verde{
+    background-color: #d2fd34;
+}
+
+.img-portfolio{
+    object-fit: cover;
+}
+
+.card-body {
+    background-color: #d2fd34;
+    opacity: 0;
+    transform: scale(1.3);
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.card:hover .card-body {
+    opacity: 1;
+    bottom: 0;
+    transform: scale(1);
+    transition: 0.5s all;
+}
+
+.fonte{
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+}
+
+.posicao-ipad{
+    object-fit: cover;
+}
+
+.h-ipad{
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: bolder;
+}
+
+/* //MODAL// */
+
+.modal{
+    padding: 0px 0px 0px 0px;
+}
+
+.modal-header{
+    width: 60vw;
+    background-color: #000000;
+    padding: 0px 0px 0px 0px;
+}
+
+.close{
+    color: white;
+}
+
+.modal-body{
+    width: 60vw;
+    background-color: #000000;
+    padding: 0px 0px 0px 0px;
+}
+
+/* //CONTATOS// */
+
+#contato{
+    width: 100%;
+    background-color: black;
+    font-size:20px;
+}
+
+#icones{
+    width: 100%;
+}
+
+/* //FOOTER// */
+
+#footer{
+    background-color: black;
+    font-size: 10px;
+    
+}
+
+#texto {
+   color:#d2fd34; 
+   font-size: 10px;
+}
+
+#facebook{
+ align-items: center;
+}
+
+#facebook a{
+    text-decoration: none;
+}
+
+.fb {
+    width: 15px;
+    height: 15px;
+}
+
+#instagram{
+    align-items: center;
+}
+
+#instagram a{
+    text-decoration: none;
+}
+
+.ig {
+    width: 17px;
+    height: 17px;
+}
+
+#youtube{
+    align-items: center;
+}
+
+#youtube a{
+    text-decoration: none;
+}
+
+.yt {
+    width: 18px;
+    height: 18px;
+}
+
+/* //MEDIA QUERIES// */
+
+@media(min-width:1024px){
+
+    .menu-responsivo{
+        background-color: transparent;
+        width: auto;
+    }
+}
+
+@media (max-width: 991px){
+
+
+    .menu-responsivo{
+        background-color: black;
+       position: absolute;
+       width: 100%;
+       top: 80px;
+    }
+
+    nav img{
+        width:130px;
+        z-index: 1;
+        margin-left: 1px;
+        margin-top: 2px;   
+    }
+
+    .menu{
+        background-color:white;
+        margin-top: -10px;
+    }
+
+    .fixo{
+        height: 80px;
+        background-color: black;
+        position: relative;
+    }
+    
+}
+
+
+@media (max-width: 425px){
+
+
+    .menu-responsivo{
+        background-color: black;
+        width: 100vw;
+    }
+
+    nav img{
+        width:90px;
+        z-index: 1;
+        margin-left: 1px;
+        margin-top: 2px; 
+    }
+
+    .menu{ 
+        width: 20px;
+        height: 20px;
+        background-color:white; 
+    }
+
+    .fixo{
+        height: 90px;
+        background-color: black;
+    }
+    
+}
+
+@media (max-width: 375px){
+
+    .menu-responsivo{
+        background-color: black;
+        width: 100vw;
+    }
+
+    nav img{
+        width:80px;
+        z-index: 1;
+        margin-left: 1px;
+        margin-top: 2px;
+    }
+
+    .menu{
+        width: 20px;
+        height: 20px;
+        background-color:white;
+        margin-top: -10px;
+    }
+
+    .fixo{
+        height: 90px;
+        background-color: black;
+    }
+    
+}
+
+@media (max-width: 320px){
+
+    .menu-responsivo{
+        background-color: black;
+        width: 100vw;
+    }
+
+    nav img{
+        width:70px;
+        z-index: 1;
+        margin-right: 1 rem;
+        margin-top: 2px;
+    }
+
+    .menu{
+        width: 20px;
+        height: 20px;
+        background-color:white;
+    }
+
+    .fixo{
+        height: 90px;
+        background-color: black;
+    }
+
+    .navegacao{
+        font-family: 'AmericanCaptain';
+       font-size: 18px;
+    }
+    
+}
+
+@media (min-width: 768px){
+
+    #contato{
+        font-size:25px;
+    }
+    
+    #footer{
+        background-color: black;
+        font-size: 12px;
+    }
+    
+    #texto {
+       color:#d2fd34; 
+       font-size: 15px;
+    }
+    
+    #facebook{
+        align-items: center;
+    }
+
+    .fb {
+        width: 27px;
+        height: 27px;
+    }
+    
+    #instagram{
+        align-items: center;
+    }
+
+    .ig {
+        width: 30px;
+        height: 30px;
+    }
+    
+    #youtube{
+        align-items: center;
+    }
+
+    .yt {
+        width: 34px;
+        height: 34px;
+    }
+}
+
+@media (min-width: 1024px){
+
+    #contato{
+        font-size:30px;
+        padding: 120px;
+    }
+    
+    #footer{
+        background-color: black;
+        font-size: 15px;
+    }
+    
+    #texto {
+       color:#d2fd34; 
+       padding-left: 280px;
+       font-size: 20px;
+    }
+    
+    #facebook{
+     align-items: center;
+    }
+
+    .fb {
+        width: 27px;
+        height: 27px;
+    }
+    
+    #instagram{
+        align-items: center;
+    }
+
+    .ig {
+        width: 30px;
+        height: 30px;
+    }
+    
+    #youtube{
+        align-items: center;
+    }
+
+    .yt {
+        width: 34px;
+        height: 34px;
+    }
+}
+
+/* //MEDIA QUERIES SIMONE// */
+
 @media (min-width: 320px){
     
     .logo-monomito {
         display: none;
     }
+
     .logo-monomito-2 {
         display: none;
     }
+
     .texto-somos {
         margin-top: 10px;
         font-size: 19px;
         margin-right: -86px;
-        
     }
+
     .foto-larissa {
         margin-left: 64px;
     }
+
     .foto-lincoln {
         margin-left: 64px;
     }
+
     .foto-paulo {
         margin-left: 64px;
     }
+
     .titulo {
         font-size: 20px;
         margin-left: 30px;
     }
+
     .texto-monomito {
         font-size: 18px;
-        margin-left: 30px;
-        
+        margin-left: 30px;    
     }
+
     .texto-monomito-2 {
         font-size: 18px;
         margin-left: 30px;
@@ -151,34 +585,40 @@ color: white;
     .logo-monomito {
         display: none;
     }
+
     .logo-monomito-2 {
         display: none;
     }
 
     .texto-somos {
-        font-size: 25px;
-        
+        font-size: 25px;  
     }
+
     .foto-larissa {
         margin-left: 13px;
         margin-bottom: 5px;
     }
+
     .foto-lincoln {
         margin-left: 13px;
         margin-bottom: 5px;
     }
+
     .foto-paulo {
         margin-left: 13px;
         margin-bottom: 5px;
     }
+
     .titulo {
         font-size: 25px;
         margin-top: 10px
     }
+
     .texto-monomito {
         font-size: 20px;
         margin-left: 15px;
     }
+
     .texto-monomito-2 {
         margin-left: 15px;
         font-size: 20px;
@@ -193,38 +633,47 @@ color: white;
     .texto-somos {
         font-size: 30px;
     }
+
     .foto-larissa {
         width: 50px;
         height: 50px;
         margin-left: 20px;
     }
+
     .texto-larissa {
         font-size: 21px;
     }
+    
     .foto-lincoln {
         width: 50px;
         height: 50px;
         margin-left: 20px;
     }
+
     .texto-lincoln {
         font-size: 21px;
     }
+
     .foto-paulo {
         width: 50px;
         height: 50px;
         margin-left: 20px;
     }
+
     .texto-paulo {
         font-size: 21px;
     }
+
     .titulo {
         margin-top: 10px;
         font-size: 25px;
     }
+
     .texto-monomito {
         margin-left: 25px;
         font-size: 20px;
     }
+
     .texto-monomito-2 {
         margin-left: 25px;
         font-size: 20px;
@@ -237,16 +686,19 @@ color: white;
         margin: 0 auto;
         width: 80%;
     }
+
     .producao-img {
         position: relative;
         width: 60%;
         /* margin-left: 110px; */
     }
+
     .fotos {
         display: flex;
         position: relative;
         justify-content: center;
     }
+
     .logo-monomito {
         display: flex;
         width: 50px;
@@ -257,6 +709,7 @@ color: white;
         transform: translateX(-85%);
     
     }
+
     .logo-monomito-2 {
         display: flex;
         width: 50px;
@@ -266,6 +719,7 @@ color: white;
         /* transform: translateY(50%); */
         transform: translateX(85%);
     }
+
     .div-mae{
         display: flex;
         flex-direction: row;
@@ -278,7 +732,6 @@ color: white;
         margin-left: 20px;
         /* margin-right: 341px; */
         /* width: 50% */
-        
     }
     
     .texto-larissa {
@@ -286,33 +739,38 @@ color: white;
         width: 167px;
         /* width: 50% */
     }
+
     .foto-larissa{
-    width: 60px;
-    height: 60px;
-    margin-bottom: 20px;
-    margin-left: 30px;
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+        margin-left: 30px;
     }
+
     .texto-lincoln {
         font-size: 16px;
         width: 167px;
         /* width: 50% */
     }
+
     .foto-lincoln{
-    width: 60px;
-    height: 60px;
-    margin-bottom: 20px;
-    margin-left: 30px;
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+        margin-left: 30px;
     }
+
     .texto-paulo {
         font-size: 16px;
         width: 167px;
         /* width: 50% */
     }
+
     .foto-paulo {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 20px;
-    margin-left: 30px;
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+        margin-left: 30px;
     }
 
     .texto-quem-somos{
@@ -323,30 +781,33 @@ color: white;
         margin-top: 30px;
         margin-left: 110px;
     }
+
     .texto-monomito {
-    flex-direction: column;
-    margin-left: 97px;
-    font-size: 17px;
-    
-    
+        flex-direction: column;
+        margin-left: 97px;
+        font-size: 17px;
     }
+
     .texto-monomito-2 {
-    flex-direction: column;
-    margin-left: 97px;
-    font-size: 17px;
+        flex-direction: column;
+        margin-left: 97px;
+        font-size: 17px;
         
     }
 }
 
 @media (min-width: 1024px) {
     .logo-monomito {
-    width: 80px;
-    }
-    .logo-monomito-2 {
-        
         width: 80px;
-}
+    }
 
+    .logo-monomito-2 {
+        width: 80px;
+    }
+
+    .fotos{
+        margin-top: 170px;
+    }
 
     .div-mae{
         display: flex;
@@ -360,42 +821,48 @@ color: white;
         margin-top: 30px;
         /* margin-right: 341px; */
         /* width: 50% */
-        
     }
+
     .titulo {
         margin-top: 30px;
         margin-left: 190px;
 
     }
+
     .texto-larissa {
         margin-left: 17px;
         /* width: 50% */
     }
+
     .foto-larissa{
-    width: 60px;
-    height: 60px;
-    margin-bottom: 20px;
-    margin-left: 30px;
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+        margin-left: 30px;
     }
+
     .texto-lincoln {
         margin-left: 17px;
         /* width: 50% */
     }
+
     .foto-lincoln{
-    width: 60px;
-    height: 60px;
-    margin-bottom: 20px;
-    margin-left: 30px;
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+        margin-left: 30px;
     }
+
     .texto-paulo {
         margin-left: 17px;
         /* width: 50% */
     }
+
     .foto-paulo {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 20px;
-    margin-left: 30px;
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+        margin-left: 30px;
     }
 
     .texto-quem-somos{
@@ -404,17 +871,15 @@ color: white;
     }
     
     .texto-monomito {
-    flex-direction: column;
-    margin-left: 190px;
-    font-size: 20px;
-    
-    
+        flex-direction: column;
+        margin-left: 190px;
+        font-size: 20px;
     }
+
     .texto-monomito-2 {
-    flex-direction: column;
-    margin-left: 190px;
-    font-size: 20px;
-        
+        flex-direction: column;
+        margin-left: 190px;
+        font-size: 20px;
     }
 }
 
@@ -423,10 +888,10 @@ color: white;
     
     .logo-monomito {
         width: 100px;
-        }
-        .logo-monomito-2 {
-            
-            width: 100px;
+    }
+
+    .logo-monomito-2 {
+         width: 100px;
     }
 
     .div-mae{
@@ -442,7 +907,6 @@ color: white;
         margin-left: 46px;
         /* margin-right: 341px; */
         /* width: 50% */
-        
     }
     
     .texto-larissa {
@@ -451,30 +915,35 @@ color: white;
         width: 397px;
         /* width: 50% */
     }
+
     .foto-larissa{
         width: 80px;
         height: 80px;
         border-radius: 70px;
         margin-left: 67px;
     }
+
     .texto-lincoln {
         margin-left: 17px;
         font-size: 23px;
         width: 397px;
         /* width: 50% */
     }
+
     .foto-lincoln{
         width: 80px;
         height: 80px;
         border-radius: 70px;
         margin-left: 67px;
     }
+
     .texto-paulo {
         margin-left: 17px;
         font-size: 23px;
         width: 397px;
         /* width: 50% */
     }
+
     .foto-paulo {
         width: 80px;
         height: 80px;
@@ -494,17 +963,15 @@ color: white;
     }
     
     .texto-monomito {
-    flex-direction: column;
-    flex-direction: column;
-    margin-left: 104px;
-    font-size: 23px;
-    
+        flex-direction: column;
+        flex-direction: column;
+        margin-left: 104px;
+        font-size: 23px;
     }
     .texto-monomito-2 {
-    flex-direction: column;
-    margin-left: 104px;
-    font-size: 23px;
-        
+        flex-direction: column;
+        margin-left: 104px;
+        font-size: 23px;    
     }
 }
 
@@ -513,10 +980,10 @@ color: white;
 
     .logo-monomito {
         width: 200px;
-        }
-        .logo-monomito-2 {
-            
-            width: 200px;
+    }
+
+    .logo-monomito-2 {
+        width: 200px;
     }
     
     .div-mae{
@@ -532,7 +999,6 @@ color: white;
         margin-left: 250px;
         /* margin-right: 341px; */
         /* width: 50% */
-        
     }
     
     .texto-larissa {
@@ -541,30 +1007,35 @@ color: white;
         width: 397px;
         /* width: 50% */
     }
+
     .foto-larissa{
         width: 80px;
         height: 80px;
         border-radius: 70px;
         margin-left: 350px;
     }
+
     .texto-lincoln {
         margin-left: 17px;
         font-size: 23px;
         width: 397px;
         /* width: 50% */
     }
+
     .foto-lincoln{
         width: 80px;
         height: 80px;
         border-radius: 70px;
         margin-left: 350px;
     }
+
     .texto-paulo {
         margin-left: 17px;
         font-size: 23px;
         width: 397px;
         /* width: 50% */
     }
+
     .foto-paulo {
         width: 80px;
         height: 80px;
@@ -581,26 +1052,18 @@ color: white;
         margin-top: 40px;
         margin-left: 450px;
         font-size: 23px;
-
     }
     
     .texto-monomito {
-    flex-direction: column;
-    margin-left: 450px;
-    font-size: 23px;
-    width: 648px;
-    
-    
+        flex-direction: column;
+        margin-left: 450px;
+        font-size: 23px;
+        width: 648px;
     }
     .texto-monomito-2 {
-    flex-direction: column;
-    margin-left: 450px;
-    font-size: 23px;
-    width: 648px;
-        
+        flex-direction: column;
+        margin-left: 450px;
+        font-size: 23px;
+        width: 648px;
     }
 }
-
-
-
-
