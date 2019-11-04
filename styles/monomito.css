@@ -235,9 +235,7 @@ header {
 }
 
 .modal-header{
-    width: 60vw;
-    background-color: #000000;
-    padding: 0px 0px 0px 0px;
+    display: none;
 }
 
 .close{
@@ -245,9 +243,8 @@ header {
 }
 
 .modal-body{
-    width: 60vw;
+    width: 180%;
     background-color: #000000;
-    padding: 0px 0px 0px 0px;
 }
 
 /* //CONTATOS// */
